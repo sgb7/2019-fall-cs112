@@ -7,8 +7,6 @@
 
 using namespace std;
 
-// Function is probably a void function.
-
 int main()
 {
     
