@@ -12,5 +12,11 @@ using namespace std;
 
 int main()
 {
-    
+    ifstream ppm_file;
+    ppm_file.open("tinypix.ppm");
+    if(ppm_file.fail())
+    {
+        cout << "Cannot open ppm_file.";
+    }
+    ppm_file.close(); 
 }
