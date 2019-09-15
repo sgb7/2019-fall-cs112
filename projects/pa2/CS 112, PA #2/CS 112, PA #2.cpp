@@ -7,9 +7,6 @@
 
 using namespace std;
 
-// Need to read file, change some of the stuff in it, 
-// and print it to the screen.
-
 int main()
 {
     ifstream ppm_file;
@@ -23,10 +20,16 @@ int main()
         string line;
         getline(ppm_file, line);
         cout << "Image Format: " << line << endl;
+        
+        getline(ppm_file, line, ' ');
+        cout << "Width: " << line << endl;
+        
         getline(ppm_file, line);
-        cout << "Width/Height: " << line << endl;
+        cout << "Height: " << line << endl;
+        
         getline(ppm_file, line);
         cout << "Max Pixel Value: " << line << endl;
+        
         cout << "Data:" << endl;
         while (getline(ppm_file, line))
         {
