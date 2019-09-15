@@ -18,5 +18,13 @@ int main()
     {
         cout << "Cannot open ppm_file.";
     }
-    ppm_file.close(); 
+    else
+    {
+        string line;
+        while (getline(ppm_file, line))
+        {
+            cout << line << '\n';
+        }
+    }  
+    ppm_file.close();
 }
