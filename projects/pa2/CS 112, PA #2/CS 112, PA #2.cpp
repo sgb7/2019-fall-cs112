@@ -21,10 +21,17 @@ int main()
     else
     {
         string line;
+        getline(ppm_file, line);
+        cout << "Image Format: " << line << endl;
+        getline(ppm_file, line);
+        cout << "Width/Height: " << line << endl;
+        getline(ppm_file, line);
+        cout << "Max Pixel Value: " << line << endl;
+        cout << "Data:" << endl;
         while (getline(ppm_file, line))
         {
-            cout << line << '\n';
+           cout << line << endl; 
         }
-    }  
+    }
     ppm_file.close();
 }
