@@ -29,7 +29,7 @@ int main()
         
         getline(ppm_file, line);
         cout << "Max Pixel Value: " << line << endl;
-        
+
         cout << "Data:" << endl;
         while (getline(ppm_file, line))
         {
@@ -37,4 +37,6 @@ int main()
         }
     }
     ppm_file.close();
+
+    return 0;
 }
