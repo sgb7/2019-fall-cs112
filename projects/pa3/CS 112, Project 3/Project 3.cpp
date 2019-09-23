@@ -39,8 +39,11 @@ int main()
         cout << "Data:" << endl;
         while (getline(ppm_file, line))
         {
-           
-           cout << line << endl; 
+            // vector<?> data;
+            for(int i=0; i%3=0; ++i)
+            {
+                // How do I change the values?
+            }  
         }
     }
     ppm_file.close();
