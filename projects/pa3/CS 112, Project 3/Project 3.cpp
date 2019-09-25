@@ -37,13 +37,19 @@ int main()
         cout << "Max Pixel Value: " << line << endl;
         
         cout << "Data:" << endl;
-        while (getline(ppm_file, line))
+        vector<string> data;
+        while (getline(ppm_file, line, ' '))
         {
-            // vector<?> data;
-            for(int i=0; i%3=0; ++i)
+            data.push_back(line);
+            for(int i = 0; i < data.size(); ++i)
+            {
+                cout << data[i] << " ";
+            }
+            /*for(int i=0; i%3=0; ++i)
             {
                 // How do I change the values?
-            }  
+                // replace function
+            }*/
         }
     }
     ppm_file.close();
