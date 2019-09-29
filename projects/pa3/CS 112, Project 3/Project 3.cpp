@@ -150,6 +150,8 @@ int main()
         output_file << data_line_4[i] << ' ';
     }
     cout << endl;
+
+    output_file.close();
     
     return 0;
 }
